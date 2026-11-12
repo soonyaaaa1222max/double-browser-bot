@@ -1,0 +1,54 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    background: #17151f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    background: #805ad5;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.75;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.welcome {
+    padding: 30px 15px;
+    background: #252230;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.welcome p {
+    color: #aaa;
+}

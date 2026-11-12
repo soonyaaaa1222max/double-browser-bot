@@ -7,25 +7,31 @@
 
     <title>MultiBrowser</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/windows.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
+
 <body>
 
-    <header>
-        <h1>MultiBrowser</h1>
-        <button id="addWindow">+ Додати вікно</button>
+    <header class="app-header">
+        <div class="logo">MultiBrowser</div>
+        <button id="addWindow">+ Нове вікно</button>
     </header>
 
     <main id="workspace">
-        <div class="welcome">
+
+        <div class="welcome" id="welcome">
             <h2>Вітаю в MultiBrowser!</h2>
-            <p>Тут будуть розміщуватися твої сайти.</p>
+            <p>Створи нове вікно, щоб відкрити сайт.</p>
         </div>
+
     </main>
 
-    <script src="app.js"></script>
+    <script type="module" src="js/app.js"></script>
 
 </body>
 </html>
+
