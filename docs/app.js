@@ -33,10 +33,24 @@ addButton.addEventListener("click", function() {
         newWindow.remove();
     });
 
+    
     // Створюємо вміст вікна
     const content = document.createElement("div");
     content.className = "window-content";
-    content.textContent = "Тут буде твій сайт";
+
+    // Створюємо поле для адреси
+    const urlInput = document.createElement("input");
+    urlInput.type = "text";
+    urlInput.placeholder = "Введи адресу сайту...";
+
+    // Створюємо кнопку відкриття
+    const openButton = document.createElement("button");
+    openButton.textContent = "Відкрити";
+
+    // Додаємо елементи у вікно
+    content.appendChild(urlInput);
+    content.appendChild(openButton);
+
 
     // Збираємо всі елементи
     header.appendChild(title);

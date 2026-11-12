@@ -78,3 +78,19 @@ button {
     color: #aaa;
     min-height: 100px;
 }
+
+
+.window-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #17151f;
+    color: white;
+    border: 1px solid #49415e;
+    border-radius: 8px;
+    outline: none;
+}
+
+.window-content button {
+    width: 100%;
+}
