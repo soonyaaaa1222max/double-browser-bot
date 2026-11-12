@@ -47,6 +47,30 @@ addButton.addEventListener("click", function() {
     const openButton = document.createElement("button");
     openButton.textContent = "Відкрити";
 
+
+    openButton.addEventListener("click", function() {
+        let url = urlInput.value.trim();
+
+        if (url === "") {
+            alert("Введи адресу сайту!");
+            return;
+        }
+
+        if (!url.startsWith("http://") && !url.startsWith("https://")) {
+            url = "https://" + url;
+        }
+
+        const iframe = document.createElement("iframe");
+
+        iframe.src = url;
+        iframe.style.width = "100%";
+        iframe.style.height = "400px";
+        iframe.style.border = "none";
+
+        content.appendChild(iframe);
+    });
+
+
     // Додаємо елементи у вікно
     content.appendChild(urlInput);
     content.appendChild(openButton);
