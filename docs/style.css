@@ -42,3 +42,39 @@ button {
 .welcome p {
     color: #aaa;
 }
+
+
+#workspace {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.browser-window {
+    background: #252230;
+    border: 1px solid #49415e;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.window-header {
+    background: #352e45;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-header button {
+    padding: 5px 10px;
+    background: #c03950;
+    font-size: 18px;
+}
+
+.window-content {
+    padding: 25px 10px;
+    text-align: center;
+    color: #aaa;
+    min-height: 100px;
+}
